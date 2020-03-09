@@ -5,5 +5,6 @@ class Nutrient {
   int fat;
   int protein;
   int fruit;
-  Nutrient({this.carbohydrate, this.fat, this.fruit, this.protein, this.water});
+  int vegetable;
+  Nutrient({this.carbohydrate, this.fat, this.fruit, this.protein, this.water, this.vegetable});
 }

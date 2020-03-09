@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:heathlyfoodrecord/createMeal.dart';
 
 import 'nutrient.dart';
 
@@ -50,7 +51,13 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: getDailyMealDetail,
+        onPressed: () {
+          Navigator.push(
+            context, 
+          MaterialPageRoute(
+            builder: (context) => CreateMeal())
+          );
+        },
         tooltip: 'Increment',
         child: Icon(Icons.fastfood),
       ),
